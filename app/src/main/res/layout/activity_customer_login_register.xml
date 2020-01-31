@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo_regiser"
+    android:scaleType="center"
+    tools:context=".CustomerLoginRegisterActivity">
+
+    <TextView
+        android:id="@+id/customer_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/customer_login"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer_status"
+        app:startIconDrawable="@drawable/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/customer_email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout"
+        app:startIconDrawable="@drawable/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/customer_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/customer_login_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="@string/login"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <TextView
+        android:id="@+id/customer_register_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer_login_button" />
+
+    <TextView
+        android:id="@+id/customer_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="@string/register"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/customer_register_link"
+        app:layout_constraintStart_toEndOf="@+id/customer_register_link"
+        app:layout_constraintTop_toTopOf="@+id/customer_register_link" />
+</androidx.constraintlayout.widget.ConstraintLayout>

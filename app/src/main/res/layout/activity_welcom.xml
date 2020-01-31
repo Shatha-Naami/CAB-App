@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo_cover"
+    tools:context=".WelcomActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/driver_button"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#fff"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/driver"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/custom_button"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/custmor"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driver_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
